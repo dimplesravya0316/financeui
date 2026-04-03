@@ -2,7 +2,7 @@
 
 A simple finance tracking dashboard built with React. This is a student project for learning React fundamentals.
 
-**Live Demo:** [https://financeui-3nojbd3pl-dimplesravya0316-1040s-projects.vercel.app](https://financeui-3nojbd3pl-dimplesravya0316-1040s-projects.vercel.app)
+**Live Demo:** [https://financeui-phi.vercel.app](https://financeui-phi.vercel.app)
 
 ## Features
 
@@ -98,8 +98,3 @@ Data is stored locally in the browser's localStorage.
 There is no backend—all data is mock/static.
 
 Charts are built with raw SVG for a beginner-friendly, dependency-free approach.
-
-
-***
-
-Are you planning to submit this version of the dashboard for your assessment, or are yo
