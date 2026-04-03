@@ -1,0 +1,268 @@
+.transactions {
+  padding: 20px;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.transactions-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+/* Transaction Form */
+.transaction-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 150px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-input {
+  padding: 8px 12px !important;
+}
+
+/* Table */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.transactions-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+.transactions-table th:hover {
+  background-color: #e0e0e0;
+}
+
+.transactions-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.transactions-table tr:last-child {
+  border-bottom: none;
+}
+
+.transactions-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.amount-cell.income {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.amount-cell.expense {
+  color: #FF6384;
+  font-weight: 600;
+}
+
+.type-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.type-badge.income {
+  background-color: #e8f5e9;
+  color: #4CAF50;
+}
+
+.type-badge.expense {
+  background-color: #ffebee;
+  color: #FF6384;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+/* Dark Mode */
+.dark-mode .transactions-title {
+  color: #fff;
+}
+
+.dark-mode .transaction-form {
+  background: #3d3d3d;
+}
+
+.dark-mode .form-group label {
+  color: #ccc;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group select {
+  background-color: #2d2d2d;
+  color: #fff;
+  border-color: #555;
+}
+
+.dark-mode .transactions-table {
+  background: #3d3d3d;
+}
+
+.dark-mode .transactions-table th {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.dark-mode .transactions-table th:hover {
+  background-color: #3d3d3d;
+}
+
+.dark-mode .transactions-table td {
+  color: #ddd;
+  border-bottom-color: #555;
+}
+
+.dark-mode .transactions-table tr:hover {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .type-badge.income {
+  background-color: #1b5e20;
+  color: #81c784;
+}
+
+.dark-mode .type-badge.expense {
+  background-color: #b71c1c;
+  color: #ef9a9a;
+}
+
+.dark-mode .empty-state {
+  color: #aaa;
+}
+
+@media (max-width: 600px) {
+  .transactions {
+    padding: 15px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .transactions-table {
+    font-size: 12px;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    padding: 8px;
+  }
+}
