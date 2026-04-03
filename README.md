@@ -2,18 +2,20 @@
 
 A simple finance tracking dashboard built with React. This is a student project for learning React fundamentals.
 
+**Live Demo:** [https://financeui-3nojbd3pl-dimplesravya0316-1040s-projects.vercel.app](https://financeui-3nojbd3pl-dimplesravya0316-1040s-projects.vercel.app)
+
 ## Features
 
-- **Dashboard Overview**: View total balance, income, and expenses with visual charts
-- **Transactions**: Add, search, filter, and sort financial transactions
-- **Role-based Access**: Switch between Viewer (read-only) and Admin (can add transactions)
-- **Insights**: View financial analytics and trends
-- **Dark Mode**: Toggle between light and dark themes
-- **Local Storage**: Data persists between sessions
+* **Dashboard Overview:** View total balance, income, and expenses with visual charts.
+* **Transactions:** Add, search, filter, and sort financial transactions.
+* **Role-based Access:** Switch between Viewer (read-only) and Admin (can add transactions).
+* **Insights:** View financial analytics and trends.
+* **Dark Mode:** Toggle between light and dark themes.
+* **Local Storage:** Data persists between sessions.
 
 ## Project Structure
 
-```
+```text
 finance-dashboard/
 ├── public/
 │   └── index.html
@@ -36,78 +38,68 @@ finance-dashboard/
 │   └── index.js             # Application entry point
 ├── package.json
 └── README.md
-```
-
-## How It Works
-
-### 1. State Management (Context API)
+How It Works
+1. State Management (Context API)
 The app uses React's Context API to manage global state:
-- **Transactions**: All financial data stored here
-- **Filters**: Search term, type filter, category filter
-- **Role**: Current user role (viewer or admin)
-- **Theme**: Dark mode toggle state
 
-The `FinanceProvider` component wraps the entire app and provides these values to all child components.
+Transactions: All financial data stored here.
 
-### 2. Components Overview
+Filters: Search term, type filter, category filter.
 
-**Header**
-- Displays app title
-- Role dropdown (Viewer/Admin)
-- Dark mode toggle button
+Role: Current user role (viewer or admin).
 
-**Dashboard**
-- Three summary cards showing Balance, Income, Expenses
-- Monthly trend bar chart (SVG-based)
-- Category spending pie chart (SVG-based)
+Theme: Dark mode toggle state.
 
-**Transactions**
-- Table displaying all transactions
-- Search by category
-- Filter by type (income/expense)
-- Filter by category
-- Sort by date, amount, or category
-- Admin can add new transactions
-- Admin can delete transactions
+The FinanceProvider component wraps the entire app and provides these values to all child components.
 
-**Insights**
-- Shows financial analytics
-- Highest spending category
-- Month-over-month comparison
-- Average daily spending
-- Savings rate calculation
+2. Components Overview
+Header: Displays app title, Role dropdown (Viewer/Admin), and Dark mode toggle button.
 
-### 3. Data Flow
+Dashboard: Three summary cards showing Balance, Income, Expenses. Includes a monthly trend bar chart (SVG-based) and category spending pie chart (SVG-based).
 
-1. App loads → FinanceProvider initializes with data from localStorage or mock data
-2. User interactions trigger state updates in context
-3. Components re-render with new data
-4. Changes are saved to localStorage
+Transactions: Table displaying all transactions. Features include search by category, filter by type (income/expense), filter by category, and sort by date, amount, or category. Admins can add and delete new transactions.
 
-## How to Run
+Insights: Shows financial analytics including highest spending category, month-over-month comparison, average daily spending, and savings rate calculation.
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
+3. Data Flow
+App loads → FinanceProvider initializes with data from localStorage or mock data.
 
-2. Start the development server:
-   ```bash
-   npm start
-   ```
+User interactions trigger state updates in context.
 
-3. Open http://localhost:3000 in your browser
+Components re-render with new data.
 
-## Technologies Used
+Changes are automatically saved to localStorage.
 
-- React 18 (Functional components + Hooks)
-- CSS (Plain CSS, no frameworks)
-- Context API for state management
-- SVG for custom charts (no external chart library needed)
+How to Run
+Install dependencies:
 
-## Notes
+Bash
+npm install
+Start the development server:
 
-- This is a student-built project - keep expectations reasonable
-- Data is stored in browser's localStorage
-- No backend - all data is mock/static
-- Charts are built with raw SVG (beginner-friendly approach)
+Bash
+npm start
+Open http://localhost:3000 in your browser.
+
+Technologies Used
+React 18 (Functional components + Hooks)
+
+CSS (Plain CSS, no frameworks)
+
+Context API for state management
+
+SVG for custom charts (no external chart library needed)
+
+Notes
+This is a student-built project designed to practice React fundamentals.
+
+Data is stored locally in the browser's localStorage.
+
+There is no backend—all data is mock/static.
+
+Charts are built with raw SVG for a beginner-friendly, dependency-free approach.
+
+
+***
+
+Are you planning to submit this version of the dashboard for your assessment, or are yo
